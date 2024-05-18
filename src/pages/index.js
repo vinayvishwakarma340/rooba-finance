@@ -10,7 +10,7 @@ export default function Home() {
 xcvxcbcvvb
       </div>
       <center className="bg-white flex h-[800px] w-[5%]  relative ">
-      <marquee className="text-black absolute skew-y-[180deg]  font-bold text-[20px] "> Contents.....cvcvbcc.. </marquee>
+      <marquee className="text-black absolute skew-y-[180deg]  font-bold text-[20px] "> Contents.... </marquee>
       </center>
       <div className=" w-[35%] bg-sky-800 flex h-[800px]">
 <div></div>

@@ -10,10 +10,10 @@ import "react-multi-carousel/lib/styles.css";
 const Event = () => {
   const book_2 = useRef();
   var settingsWeb_2 = {
-    autoplaySpeed: 1000,
+    autoplaySpeed: 3000,
     infinite: true,
     speed: 1000,
-    slidesToShow: 1.5,
+    slidesToShow: 2,
     autoplay: true,
     arrows: false,
     dots: true,
@@ -35,14 +35,13 @@ const Event = () => {
   ];
   return (
     <div className=" flex w-full max-h-[950px] overflow-hidden">
-      <div className=" w-[60%] flex bg-sky-800 h-[1200px]">
+      <div className=" w-[60%] flex bg-[#15181b] h-[1200px]">
         <div className="flex ">
-          {" "}
           <div></div>
           <div className="text-orange-500 text-[40px] font-bold">Astric</div>
         </div>
         <p>Astri</p>
-        <div className="hidden sm:grid z-10 lg:max-w-none sm:grid-cols-2 xl:grid-cols-4 lg:grid-cols-3 gap-4">
+        <div className="hidden sm:grid z-10 w-full overflow-hidden lg:max-w-none sm:grid-cols-2 xl:grid-cols-4 lg:grid-cols-3 gap-4">
           {/* {props?.data.length > 4 && (
           <div className="z-30 absolute mt-[200px]  item-center left-[30px]  hidden  sm:flex justify-between         px-4   sm:items-center ">
             <button
@@ -75,17 +74,17 @@ const Event = () => {
             <Slider
               ref={book_2}
               {...settingsWeb_2}
-              className="col-span-4  grid grid-cols-4 sm:grid-cols-3 mt-14 w-2/3 "
+              className="col-span-4 translate-x-32 w-full  grid grid-cols-4 sm:grid-cols-3 mt-14  "
             >
               {data?.slice(0, 3).map((item, indx) => {
                 return (
                   <div
                     key={indx}
-                    className="pr-5 right-0 grid grid-cols-1 hover:scale-105 transition duration-700 ease-in-out hover:my-2 col-span-1 rounded-lg "
+                    className="pr-5 right-0 grid grid-cols-1 hover:scale-105 transition duration-700 ease-in-out  col-span-1 rounded-lg "
                   >
                     <div
                       className={
-                        "h-full sm:w-[full] w-full relative  rounded-lg border border-gray-600  overflow-hidden  hover:border-sky-500 hover:border-4 m-2"
+                        "h-full sm:w-[full] w-full relative  rounded-lg border border-gray-600  overflow-hidden  hover:border-sky-500  m-2"
                       }
                     >
                       <img
@@ -97,7 +96,6 @@ const Event = () => {
                         className="rounded-t-lg h-[500px] w-full border-b  "
                       />
                       <div className="absolute  top-2 right-2">
-                        {" "}
                         {/*  <Image
                           src="/instaIcon.webp"
                           width={30}
@@ -134,7 +132,6 @@ const Event = () => {
                           className=""
                         />
                         <div className="absolute top-2 right-2">
-                          {" "}
                           <Image
                             src="/instaIcon.webp"
                             width={30}
@@ -155,32 +152,28 @@ const Event = () => {
           )}
         </div>
       </div>
-      <div className="bg-[#b9a0ff] flex justify-center  w-[5%] overflow-hidden  relative ">
-        <p
-          direction="up"
-          className="text-black [writing-mode:vertical-lr] h-[2000px]  font-medium text-3xl tracking-wide	"
-        >
-          lorem dlfsdlsdf f sdsd; ;o j;o o oo opis{" "}
+      <div className="bg-[#b9a0ff] flex justify-center  w-[5%] overflow-hidden   relative ">
+        <div className="top-animate text-black [writing-mode:vertical-lr] h-[2000px] absolute font-medium text-3xl tracking-wide	">
+          lorem dlfsdlsdf f sdsd; ;o j;o o oo opis
           <span className="text-4xl mx-4">*</span> lorem dlfsdlsdf f sdsd; ;o
           j;o o oo opis
-        </p>
+        </div>
       </div>
-      <div className=" w-[35%] bg-sky-800 h-[1200px]">
+      <div className=" w-[35%] bg-[#15181b] h-[1200px]">
         {/* <p className='w-full font-bold text-[25px] text-white pl-[20px] ml-[10px]'>Explore your First Collectible</p>
 <p className='w-full font-bold text-[25px] text-white pl-[20px] ml-[10px] '> Collectible</p>
 <p className='w-full font-bold text-[40px] text-white pl-[20px] ml-[10px] mt-[30px]'>Meta </p>
 <p className=' w-full font-bold text-[40px] text-white pl-[20px] ml-[10px]'>Live</p> */}
 
-        <p className="w-full font-bold text-[25px] text-white pl-[20px] ml-[10px] ">
-          Explore your first Event
+        <p className="w-full font-bold text-[25px] text-white pl-[20px] ml-[10px] mt-10 ">
+          Explore your first
         </p>
         <p className="w-full font-bold text-[25px] text-white pl-[20px] ml-[10px] ">
-          {" "}
           Event
         </p>
 
         <p className="w-full font-bold text-[45px] text-white pl-[20px] ml-[10px] mt-[50px]">
-          Event Name{" "}
+          Event Name
         </p>
         <p className=" flex w-full font-bold mt-6 text-[25px] text-white pl-[20px] ml-[10px]">
           <span className="mt-2">
@@ -202,7 +195,7 @@ const Event = () => {
                 stroke-linejoin="round"
                 d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
               />
-            </svg>{" "}
+            </svg>
           </span>
 
           <span className="pl-6 ">Venue</span>
@@ -227,39 +220,36 @@ const Event = () => {
           <span className="pl-3 ">@19:00</span>
         </p>
         <p className=" font-semibold text-[16px] text-white p-[20px] ml-[10px] w-2/3 leading-6 ">
-          {" "}
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.{" "}
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
 
         <p className="w-full font-semibold text-[25px] text-white pl-[20px] ml-[10px] ">
-          {" "}
           Artist Lineup
         </p>
-        <div className="flex justify-center p-[20px] mt-10">
+        <div className="flex justify-center p-[20px] mt-16">
           <img
-            className="w-[120px] h-[200px] rounded-l-xl"
-            src="https://tse4.mm.bing.net/th?id=OIP.u6w2jys2w26iF8xFwYJCoAHaE8&pid=Api&P=0&h=180"
+            className="w-[120px] h-[170px] rounded-l-xl bg-cover"
+            src="https://images.pexels.com/photos/2419554/pexels-photo-2419554.jpeg?auto=compress&cs=tinysrgb&w=600"
           />
           <img
-            className="w-[180px] h-[250px] rounded-xl -mt-6"
-            src="https://tse4.mm.bing.net/th?id=OIP.u6w2jys2w26iF8xFwYJCoAHaE8&pid=Api&P=0&h=180"
+            className="w-[180px] h-[220px] rounded-xl -mt-6 bg-cover"
+            src="https://images.pexels.com/photos/1809390/pexels-photo-1809390.jpeg?auto=compress&cs=tinysrgb&w=600"
           />
           <img
-            className="w-[120px] h-[200px] rounded-r-xl"
-            src="https://tse4.mm.bing.net/th?id=OIP.u6w2jys2w26iF8xFwYJCoAHaE8&pid=Api&P=0&h=180"
+            className="w-[120px] h-[170px] rounded-r-xl bg-cover"
+            src="https://images.pexels.com/photos/1881773/pexels-photo-1881773.jpeg?auto=compress&cs=tinysrgb&w=600"
           />
         </div>
 
-        <div className="flex w-full p-[20px] mt-10  ">
+        <div className="flex w-full p-[20px] mt-10  relative ">
           <div className="w-1/2 pl-[20px]">
             <img
-              className="w-[100px] h-[100px] rounded-lg"
+              className="w-[100px] h-[100px] rounded-lg bg-cover"
               src="https://tse3.mm.bing.net/th?id=OIP.hLDXPRy5J91FEnjuOHKoPAHaGH&pid=Api&P=0&h=180"
             />
           </div>
-          <div className="flex justify-end items-end h-[50px] sbsolute bottom-0 bg-[#e4893f] content-baseline text-center rounded-[20px] p-1 pl-3 pr-3  text-black text-[25px] font-bold">
-            {" "}
+          <div className="flex justify-end items-end w-max  py-2 px-5 absolute right-16 bottom-5 bg-[#ffca5f] content-baseline text-center rounded-full   text-black text-[25px] font-bold">
             Join Waitlist
           </div>
         </div>

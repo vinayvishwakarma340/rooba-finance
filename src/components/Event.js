@@ -34,7 +34,7 @@ const Event = () => {
     },
   ];
   return (
-    <div className=" flex w-full">
+    <div className=" flex w-full max-h-[950px] overflow-hidden">
       <div className=" w-[60%] flex bg-sky-800 h-[1200px]">
         <div className="flex ">
           {" "}
@@ -155,14 +155,16 @@ const Event = () => {
           )}
         </div>
       </div>
-      <center className="bg-white flex h-[1200px] w-[5%]  relative ">
-        <marquee
+      <div className="bg-[#b9a0ff] flex justify-center  w-[5%] overflow-hidden  relative ">
+        <p
           direction="up"
-          className="text-black [writing-mode:vertical-lr]   font-bold text-[20px] "
+          className="text-black [writing-mode:vertical-lr] h-[2000px]  font-medium text-3xl tracking-wide	"
         >
           lorem dlfsdlsdf f sdsd; ;o j;o o oo opis{" "}
-        </marquee>
-      </center>
+          <span className="text-4xl mx-4">*</span> lorem dlfsdlsdf f sdsd; ;o
+          j;o o oo opis
+        </p>
+      </div>
       <div className=" w-[35%] bg-sky-800 h-[1200px]">
         {/* <p className='w-full font-bold text-[25px] text-white pl-[20px] ml-[10px]'>Explore your First Collectible</p>
 <p className='w-full font-bold text-[25px] text-white pl-[20px] ml-[10px] '> Collectible</p>

@@ -10,7 +10,7 @@ import "react-multi-carousel/lib/styles.css";
 const Event = () => {
   const book_2 = useRef();
   var settingsWeb_2 = {
-    autoplaySpeed: 3000,
+    autoplaySpeed: 1000,
     infinite: true,
     speed: 1000,
     slidesToShow: 2,

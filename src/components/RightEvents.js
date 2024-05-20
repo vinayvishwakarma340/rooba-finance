@@ -4,7 +4,7 @@ const RightEvents = () => {
   return (
     <div>
       <div>
-        <p className="w-full font-bold text-[25px] text-white pl-[20px] ml-[10px] mt-10 ">
+        <p className="w-full font-bold text-[25px] text-white pl-[20px] ml-[10px]  ">
           Explore your first
         </p>
         <p className="w-full font-bold text-[25px] text-white pl-[20px] ml-[10px] ">

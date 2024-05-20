@@ -14,6 +14,7 @@ const Event = () => {
   const [actButton, setActButton] = useState("Events");
   const book_2 = useRef();
   var settingsWeb_2 = {
+
     autoplaySpeed: 2000,
     infinite: true,
     speed: 1000,
